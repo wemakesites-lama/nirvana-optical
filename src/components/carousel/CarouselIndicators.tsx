@@ -11,7 +11,7 @@ export function CarouselIndicators({
 }: CarouselIndicatorsProps) {
   return (
     <div
-      className="absolute bottom-4 left-1/2 z-10 flex -translate-x-1/2 gap-2"
+      className="flex justify-center gap-2 py-3 sm:absolute sm:bottom-4 sm:left-1/2 sm:z-10 sm:-translate-x-1/2 sm:py-0"
       role="tablist"
       aria-label="Slide navigation"
     >
@@ -25,7 +25,7 @@ export function CarouselIndicators({
           className={`h-2.5 rounded-full transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-green-500 focus-visible:ring-offset-2 ${
             index === current
               ? "w-8 bg-brand-green-500"
-              : "w-2.5 bg-white/70 hover:bg-white"
+              : "w-2.5 bg-gray-300 hover:bg-gray-400 sm:bg-white/70 sm:hover:bg-white"
           }`}
         />
       ))}
